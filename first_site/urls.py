@@ -20,4 +20,5 @@ from django.urls import include, path
 urlpatterns = [
     path('polls/', include('polls.urls')),
     path('admin/', admin.site.urls),
+    path('api/v1/chat', include('chat_room.urls')),
 ]
